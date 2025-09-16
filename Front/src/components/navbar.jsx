@@ -4,6 +4,8 @@ import { Menu, Network } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -41,15 +43,11 @@ export default function Navbar() {
           <Link to="/pricing" className="text-sm font-medium transition-colors hover:text-primary">
             Tarifs
           </Link>
-          <Link to="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
-          </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
-          <Link to="/login" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
-            Se connecter
+          <Link to="/contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>
+            Contact
           </Link>
-          <Button className="hidden md:flex">Essai gratuit</Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -74,12 +72,6 @@ export default function Navbar() {
                 <Link to="/contact" className="text-lg font-medium transition-colors hover:text-primary">
                   Contact
                 </Link>
-                <div className="flex flex-col gap-2 mt-4">
-                  <Link to="/login" className="text-lg font-medium transition-colors hover:text-primary">
-                    Se connecter
-                  </Link>
-                  <Button className="w-full">Essai gratuit</Button>
-                </div>
               </div>
             </SheetContent>
           </Sheet>
