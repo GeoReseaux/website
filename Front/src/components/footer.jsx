@@ -130,7 +130,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} GeoRéseaux. Tous droits réservés.
+              &copy; {new Date().getFullYear()} Géo-Réseaux. Tous droits réservés.
             </p>
             <div className="flex gap-4">
               <Link to="#" className="text-xs text-muted-foreground hover:text-primary">

@@ -220,7 +220,7 @@ export default function Home() {
                     <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
                     <div className="h-3 w-3 rounded-full bg-green-500"></div>
                   </div>
-                  <div className="mx-auto text-xs font-medium">Tableau de bord GeoRéseaux</div>
+                  <div className="mx-auto text-xs font-medium">Tableau de bord Géo-Réseaux</div>
                 </div>
                 <div className="pt-12 pb-4">
                   <img
