@@ -104,15 +104,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <span className="text-sm text-muted-foreground">123 Avenue de la République, 75011 Paris, France</span>
+                <span className="text-sm text-muted-foreground">3 Rue des pins, 31790 Saint-Jory, France</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">+33 1 23 45 67 89</span>
+                <span className="text-sm text-muted-foreground">+33 7 69 80 54 38</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">contact@georeseaux.fr</span>
+                <span className="text-sm text-muted-foreground">contact@geo-reseaux.net</span>
               </li>
             </ul>
           </div>
