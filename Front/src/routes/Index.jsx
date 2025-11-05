@@ -87,9 +87,9 @@ export default function Home() {
             >
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
-                  Nos Services
+                  Les prestations Géo-Réseaux
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Services complets de détection</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Les prestations Géo-Réseaux</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   De la détection initiale au géoréférencement final, nous vous accompagnons dans tous vos projets.
                 </p>
@@ -107,9 +107,9 @@ export default function Home() {
                   <Search className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Détection de réseaux enterrés</h3>
+                  <h3 className="text-xl font-bold">DETECTION DE RESEAUX ENTERRÉS</h3>
                   <p className="text-muted-foreground">
-                    Localisation précise de tous types de réseaux : gaz, électricité, télécoms, eau, assainissement, chauffage urbain et fibre optique.
+                    La détection de réseau enterré est une étape cruciale pour sécuriser les travaux publics, éviter les accidents et optimiser les coûts.
                   </p>
                 </div>
               </motion.div>
@@ -124,9 +124,9 @@ export default function Home() {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Géoréférencement</h3>
+                  <h3 className="text-xl font-bold">GEOREFERENCEMENT DE RESEAUX ENTERRÉS</h3>
                   <p className="text-muted-foreground">
-                    Relevé des coordonnées géographiques (x, y, z) conforme à la norme NF S 70 003-3 pour un positionnement précis.
+                    Le géoréférencement des réseaux enterrés est une opération essentielle pour cartographier avec précision les infrastructures souterraines (gaz, électricité, eau, télécoms, assainissement…).
                   </p>
                 </div>
               </motion.div>
@@ -141,9 +141,9 @@ export default function Home() {
                   <Network className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Travaux fibre optique</h3>
+                  <h3 className="text-xl font-bold">TOPOGRAPHIE ET CARTOGRAPHIE</h3>
                   <p className="text-muted-foreground">
-                    Recherche de regards télécom, localisation de points de blocage, débouchage de gaines et création de nouveaux réseaux.
+                    La topographie et la cartographie sont deux disciplines complémentaires au cœur des métiers du géoréférencement, de la détection de réseaux et de l’aménagement du territoire.
                   </p>
                 </div>
               </motion.div>
@@ -158,9 +158,9 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Mise en sécurité</h3>
+                  <h3 className="text-xl font-bold">ETUDE DE PROJET ELECTRIQUE ET GAZ</h3>
                   <p className="text-muted-foreground">
-                    Investigations complémentaires (IC) et opérations de localisation (OL) pour tous travaux à proximité des réseaux.
+                    L’étude de projet est une phase stratégique dans les travaux d’aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s’inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
                   </p>
                 </div>
               </motion.div>
@@ -175,26 +175,9 @@ export default function Home() {
                   <FileCheck className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Génie civil</h3>
+                  <h3 className="text-xl font-bold">SECURISATION DES RESEAUX POUR DES TRAVAUX SÛRE</h3>
                   <p className="text-muted-foreground">
-                    Réalisation de tranchées, pose de chambres de tirage, travaux publics et création de réseaux complets.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <Map className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Plans et récolement</h3>
-                  <p className="text-muted-foreground">
-                    Implantation et récolement de réseaux, plans d'exécution et DOE classe A pour vos projets.
+                    La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu’acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
                   </p>
                 </div>
               </motion.div>
