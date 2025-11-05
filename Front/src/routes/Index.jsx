@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowRight, Globe, Map, Network, Shield, Zap, Search, MapPin, FileCheck, Users, Star, Building, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import NetworkAnimation from "@/components/network-animation"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -97,92 +99,227 @@ export default function Home() {
             </motion.div>
             <div className="mx-auto grid max-w-6xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 items-stretch">
               <div className="md:col-span-2 lg:col-span-3 grid gap-8 md:grid-cols-2 justify-center items-stretch">
-                <motion.div
-                  className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
-                >
-                  <div className="rounded-lg bg-primary/10 p-3">
-                    <Search className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">DETECTION DE RESEAUX ENTERRÉS</h3>
-                    <p className="text-muted-foreground">
-                      La détection de réseau enterré est une étape cruciale pour sécuriser les travaux publics, éviter les accidents et optimiser les coûts.
-                    </p>
-                  </div>
-                </motion.div>
-                <motion.div
-                  className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 }}
-                >
-                  <div className="rounded-lg bg-primary/10 p-3">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">GEOREFERENCEMENT DE RESEAUX ENTERRÉS</h3>
-                    <p className="text-muted-foreground">
-                      Le géoréférencement des réseaux enterrés est une opération essentielle pour cartographier avec précision les infrastructures souterraines (gaz, électricité, eau, télécoms, assainissement…).
-                    </p>
-                  </div>
-                </motion.div>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <motion.div
+                      className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6 cursor-pointer"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      <div className="rounded-lg bg-primary/10 p-3">
+                        <Search className="h-6 w-6 text-primary" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-xl font-bold">DETECTION DE RESEAUX ENTERRÉS</h3>
+                        <p className="text-muted-foreground">
+                          La détection de réseau enterré est une étape cruciale pour sécuriser les travaux publics, éviter les accidents et optimiser les coûts.
+                        </p>
+                      </div>
+                    </motion.div>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl">
+                    <DialogHeader>
+                      <DialogTitle>DETECTION DE RESEAUX ENTERRÉS</DialogTitle>
+                      <DialogDescription>
+                        Aperçu de nos interventions et méthodes de détection.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Méthode électromagnétique</div>
+                        </CarouselItem>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Radar géologique (GPR)</div>
+                        </CarouselItem>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Résultats cartographiés</div>
+                        </CarouselItem>
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </DialogContent>
+                </Dialog>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <motion.div
+                      className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6 cursor-pointer"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      <div className="rounded-lg bg-primary/10 p-3">
+                        <MapPin className="h-6 w-6 text-primary" />
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-xl font-bold">GEOREFERENCEMENT DE RESEAUX ENTERRÉS</h3>
+                        <p className="text-muted-foreground">
+                          Le géoréférencement des réseaux enterrés est une opération essentielle pour cartographier avec précision les infrastructures souterraines (gaz, électricité, eau, télécoms, assainissement…).
+                        </p>
+                      </div>
+                    </motion.div>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl">
+                    <DialogHeader>
+                      <DialogTitle>Géoréférencement des réseaux</DialogTitle>
+                      <DialogDescription>
+                        Exemples de levés et restitutions cartographiques.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Relevé RTK</div>
+                        </CarouselItem>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Plan topo</div>
+                        </CarouselItem>
+                        <CarouselItem>
+                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Export SIG</div>
+                        </CarouselItem>
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                  </DialogContent>
+                </Dialog>
               </div>
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <Network className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">TOPOGRAPHIE ET CARTOGRAPHIE</h3>
-                  <p className="text-muted-foreground">
-                    La topographie et la cartographie sont deux disciplines complémentaires au cœur des métiers du géoréférencement, de la détection de réseaux et de l’aménagement du territoire.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <Shield className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">ETUDE DE PROJET ELECTRIQUE ET GAZ</h3>
-                  <p className="text-muted-foreground">
-                    L’étude de projet est une phase stratégique dans les travaux d’aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s’inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <FileCheck className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">SECURISATION DES RESEAUX POUR DES TRAVAUX SÛRE</h3>
-                  <p className="text-muted-foreground">
-                    La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu’acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
-                  </p>
-                </div>
-              </motion.div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <motion.div
+                    className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6 cursor-pointer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                  >
+                    <div className="rounded-lg bg-primary/10 p-3">
+                      <Network className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold">TOPOGRAPHIE ET CARTOGRAPHIE</h3>
+                      <p className="text-muted-foreground">
+                        La topographie et la cartographie sont deux disciplines complémentaires au cœur des métiers du géoréférencement, de la détection de réseaux et de l’aménagement du territoire.
+                      </p>
+                    </div>
+                  </motion.div>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle>Topographie & Cartographie</DialogTitle>
+                    <DialogDescription>
+                      Échantillon de livrables et relevés.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">MNT / Courbes</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Plan masse</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Orthophoto</div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <motion.div
+                    className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6 cursor-pointer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                  >
+                    <div className="rounded-lg bg-primary/10 p-3">
+                      <Shield className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold">ETUDE DE PROJET ELECTRIQUE ET GAZ</h3>
+                      <p className="text-muted-foreground">
+                        L’étude de projet est une phase stratégique dans les travaux d’aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s’inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
+                      </p>
+                    </div>
+                  </motion.div>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle>Étude de projet</DialogTitle>
+                    <DialogDescription>
+                      Étapes clés et exemples de dossiers.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Analyse préalable</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Conception / Plans</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Validation & conformité</div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <motion.div
+                    className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6 cursor-pointer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    <div className="rounded-lg bg-primary/10 p-3">
+                      <FileCheck className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold">SECURISATION DES RESEAUX POUR DES TRAVAUX SÛRE</h3>
+                      <p className="text-muted-foreground">
+                        La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu’acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
+                      </p>
+                    </div>
+                  </motion.div>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle>Sécurisation des réseaux</DialogTitle>
+                    <DialogDescription>
+                      Procédures et bonnes pratiques.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Repérage & marquage</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Signalisation chantier</div>
+                      </CarouselItem>
+                      <CarouselItem>
+                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Contrôles et rapports</div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </section>
