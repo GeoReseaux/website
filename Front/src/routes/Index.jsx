@@ -87,7 +87,7 @@ export default function Home() {
             >
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
-                  Les prestations Géo-Réseaux
+                  Prestations
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Les prestations Géo-Réseaux</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -95,41 +95,43 @@ export default function Home() {
                 </p>
               </div>
             </motion.div>
-            <div className="mx-auto grid max-w-6xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <Search className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">DETECTION DE RESEAUX ENTERRÉS</h3>
-                  <p className="text-muted-foreground">
-                    La détection de réseau enterré est une étape cruciale pour sécuriser les travaux publics, éviter les accidents et optimiser les coûts.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-              >
-                <div className="rounded-lg bg-primary/10 p-3">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">GEOREFERENCEMENT DE RESEAUX ENTERRÉS</h3>
-                  <p className="text-muted-foreground">
-                    Le géoréférencement des réseaux enterrés est une opération essentielle pour cartographier avec précision les infrastructures souterraines (gaz, électricité, eau, télécoms, assainissement…).
-                  </p>
-                </div>
-              </motion.div>
+            <div className="mx-auto grid max-w-6xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 items-stretch">
+              <div className="md:col-span-2 lg:col-span-3 grid gap-8 md:grid-cols-2 justify-center items-stretch">
+                <motion.div
+                  className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <div className="rounded-lg bg-primary/10 p-3">
+                    <Search className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold">DETECTION DE RESEAUX ENTERRÉS</h3>
+                    <p className="text-muted-foreground">
+                      La détection de réseau enterré est une étape cruciale pour sécuriser les travaux publics, éviter les accidents et optimiser les coûts.
+                    </p>
+                  </div>
+                </motion.div>
+                <motion.div
+                  className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <div className="rounded-lg bg-primary/10 p-3">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold">GEOREFERENCEMENT DE RESEAUX ENTERRÉS</h3>
+                    <p className="text-muted-foreground">
+                      Le géoréférencement des réseaux enterrés est une opération essentielle pour cartographier avec précision les infrastructures souterraines (gaz, électricité, eau, télécoms, assainissement…).
+                    </p>
+                  </div>
+                </motion.div>
+              </div>
               <motion.div
                 className="flex flex-col items-start space-y-4 rounded-lg border bg-card p-6"
                 initial={{ opacity: 0, y: 20 }}
