@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ArrowRight, Globe, Map, Network, Shield, Zap, Search, MapPin, FileCheck, Users, Star, Building, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import NetworkAnimation from "@/components/network-animation"
-import FeatureCard from "@/components/feature-card"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -73,66 +72,6 @@ export default function Home() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-background py-20">
-          <div className="container px-4 md:px-6">
-            <motion.div
-              className="flex flex-col items-center justify-center space-y-4 text-center"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
-                  Fonctionnalités
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Expertise complète en détection de réseaux</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Nos équipes certifiées utilisent des technologies de pointe pour cartographier le sous-sol et assurer la sécurité de vos travaux à proximité des réseaux enterrés.
-                </p>
-              </div>
-            </motion.div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <FeatureCard
-                icon={<Search className="h-10 w-10 text-primary" />}
-                title="Détection géoradar"
-                description="Géoradar double-fréquence couplé à un GPS topographique pour un levé géoréférencé en temps réel."
-                delay={0.1}
-              />
-              <FeatureCard
-                icon={<MapPin className="h-10 w-10 text-primary" />}
-                title="Géoréférencement"
-                description="Relevé des coordonnées géographiques (x, y, z) pour connaître avec précision le positionnement des réseaux."
-                delay={0.3}
-              />
-              <FeatureCard
-                icon={<Shield className="h-10 w-10 text-primary" />}
-                title="Conformité DT-DICT"
-                description="Respect des normes en vigueur pour la sécurité à proximité des canalisations et réseaux enterrés."
-                delay={0.5}
-              />
-              <FeatureCard
-                icon={<FileCheck className="h-10 w-10 text-primary" />}
-                title="Certification Bureau Veritas"
-                description="Prestataires certifiés pour les prestations de géoréférencement et détection des réseaux."
-                delay={0.2}
-              />
-              <FeatureCard
-                icon={<Network className="h-10 w-10 text-primary" />}
-                title="Tous types de réseaux"
-                description="Gaz, électricité, télécoms, eau, assainissement, chauffage urbain, fibre optique."
-                delay={0.4}
-              />
-              <FeatureCard
-                icon={<Users className="h-10 w-10 text-primary" />}
-                title="Équipes spécialisées"
-                description="Techniciens expérimentés équipés de matériel de pointe pour des relevés de haute précision."
-                delay={0.6}
-              />
             </div>
           </div>
         </section>
