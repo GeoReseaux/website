@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
               <Network className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold">GéoRéseaux</span>
+              <span className="text-lg font-bold">Géo-Réseaux</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Solutions innovantes de géolocalisation et gestion de réseau pour les entreprises modernes.
@@ -95,16 +95,6 @@ export default function Footer() {
               <li>
                 <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
                   Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Partenaires
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Presse
                 </Link>
               </li>
             </ul>
