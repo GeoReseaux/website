@@ -34,18 +34,15 @@ export default function Navbar() {
           <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
             Accueil
           </Link>
-          <Link to="/solutions" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link to="#solutions" className="text-sm font-medium transition-colors hover:text-primary">
             Solutions
           </Link>
-          <Link to="/features" className="text-sm font-medium transition-colors hover:text-primary">
-            Fonctionnalités
-          </Link>
-          <Link to="/pricing" className="text-sm font-medium transition-colors hover:text-primary">
-            Tarifs
+          <Link to="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
+            Prestation
           </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
-          <Link to="/contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>
+          <Link to="#contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>
             Contact
           </Link>
           <Sheet>
@@ -60,16 +57,13 @@ export default function Navbar() {
                 <Link to="/" className="text-lg font-medium transition-colors hover:text-primary">
                   Accueil
                 </Link>
-                <Link to="/solutions" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link to="#solutions" className="text-lg font-medium transition-colors hover:text-primary">
                   Solutions
                 </Link>
-                <Link to="/features" className="text-lg font-medium transition-colors hover:text-primary">
-                  Fonctionnalités
-                </Link>
-                <Link to="/pricing" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link to="#pricing" className="text-lg font-medium transition-colors hover:text-primary">
                   Tarifs
                 </Link>
-                <Link to="/contact" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link to="#contact" className="text-lg font-medium transition-colors hover:text-primary">
                   Contact
                 </Link>
               </div>
