@@ -38,7 +38,10 @@ export default function Navbar() {
             Solutions
           </Link>
           <Link to="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
-            Prestation
+            Prestations
+          </Link>
+          <Link to="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
+            Témoignages
           </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
@@ -61,7 +64,10 @@ export default function Navbar() {
                   Solutions
                 </Link>
                 <Link to="#pricing" className="text-lg font-medium transition-colors hover:text-primary">
-                  Tarifs
+                  Prestations
+                </Link>
+                <Link to="#testimonials" className="text-lg font-medium transition-colors hover:text-primary">
+                  Témoignages
                 </Link>
                 <Link to="#contact" className="text-lg font-medium transition-colors hover:text-primary">
                   Contact
