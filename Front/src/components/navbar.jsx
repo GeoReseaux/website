@@ -34,9 +34,6 @@ export default function Navbar() {
           <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
             Accueil
           </Link>
-          <Link to="#solutions" className="text-sm font-medium transition-colors hover:text-primary">
-            Solutions
-          </Link>
           <Link to="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
             Prestations
           </Link>
@@ -59,9 +56,6 @@ export default function Navbar() {
               <div className="flex flex-col gap-6 mt-8">
                 <Link to="/" className="text-lg font-medium transition-colors hover:text-primary">
                   Accueil
-                </Link>
-                <Link to="#solutions" className="text-lg font-medium transition-colors hover:text-primary">
-                  Solutions
                 </Link>
                 <Link to="#pricing" className="text-lg font-medium transition-colors hover:text-primary">
                   Prestations
