@@ -189,6 +189,127 @@ export default function Home() {
 
         <section className="bg-muted/50 py-20">
           <div className="container px-4 md:px-6">
+            <motion.div
+              className="text-center space-y-4 mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
+                Témoignages
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Ils nous font confiance
+              </h2>
+              <p className="text-muted-foreground md:text-xl/relaxed max-w-3xl mx-auto">
+                Découvrez les retours d'expérience de nos clients qui ont fait appel à nos services de détection de réseaux enterrés.
+              </p>
+            </motion.div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <motion.div
+                className="rounded-lg border bg-background p-6 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-primary/10 p-2">
+                    <Building className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      "Intervention rapide et précise pour notre chantier de rénovation urbaine. L'équipe a su identifier tous les réseaux avec une grande précision, évitant ainsi tout risque d'incident."
+                    </p>
+                    <div className="pt-2">
+                      <p className="font-semibold text-sm">Marie Dubois</p>
+                      <p className="text-xs text-muted-foreground">Responsable Travaux - Mairie de Lyon</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div
+                className="rounded-lg border bg-background p-6 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-primary/10 p-2">
+                    <Wrench className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      "Service professionnel et conforme aux normes DT-DICT. Les rapports détaillés nous ont permis de planifier nos travaux en toute sécurité. Je recommande vivement."
+                    </p>
+                    <div className="pt-2">
+                      <p className="font-semibold text-sm">Pierre Martin</p>
+                      <p className="text-xs text-muted-foreground">Directeur Technique - BTP Constructions</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div
+                className="rounded-lg border bg-background p-6 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-primary/10 p-2">
+                    <Zap className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      "Excellente prestation pour la détection des réseaux électriques sur notre site industriel. Équipe réactive et matériel de pointe. Délais respectés."
+                    </p>
+                    <div className="pt-2">
+                      <p className="font-semibold text-sm">Sophie Leroy</p>
+                      <p className="text-xs text-muted-foreground">Chef de Projet - Industrie & Énergie</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            <motion.div
+              className="text-center mt-12"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+            >
+              <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                <Star className="h-4 w-4 fill-primary text-primary" />
+                <span className="font-semibold">4.9/5</span>
+                <span>•</span>
+                <span>Plus de 500 chantiers réalisés</span>
+                <span>•</span>
+                <span>98% de clients satisfaits</span>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <motion.div
                 className="flex flex-col justify-center space-y-6"
@@ -309,127 +430,6 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container px-4 md:px-6">
-            <motion.div
-              className="text-center space-y-4 mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
-                Témoignages
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ils nous font confiance
-              </h2>
-              <p className="text-muted-foreground md:text-xl/relaxed max-w-3xl mx-auto">
-                Découvrez les retours d'expérience de nos clients qui ont fait appel à nos services de détection de réseaux enterrés.
-              </p>
-            </motion.div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <motion.div
-                className="rounded-lg border bg-background p-6 shadow-sm"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <Building className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                      ))}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      "Intervention rapide et précise pour notre chantier de rénovation urbaine. L'équipe a su identifier tous les réseaux avec une grande précision, évitant ainsi tout risque d'incident."
-                    </p>
-                    <div className="pt-2">
-                      <p className="font-semibold text-sm">Marie Dubois</p>
-                      <p className="text-xs text-muted-foreground">Responsable Travaux - Mairie de Lyon</p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                className="rounded-lg border bg-background p-6 shadow-sm"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <Wrench className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                      ))}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      "Service professionnel et conforme aux normes DT-DICT. Les rapports détaillés nous ont permis de planifier nos travaux en toute sécurité. Je recommande vivement."
-                    </p>
-                    <div className="pt-2">
-                      <p className="font-semibold text-sm">Pierre Martin</p>
-                      <p className="text-xs text-muted-foreground">Directeur Technique - BTP Constructions</p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                className="rounded-lg border bg-background p-6 shadow-sm"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                      ))}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      "Excellente prestation pour la détection des réseaux électriques sur notre site industriel. Équipe réactive et matériel de pointe. Délais respectés."
-                    </p>
-                    <div className="pt-2">
-                      <p className="font-semibold text-sm">Sophie Leroy</p>
-                      <p className="text-xs text-muted-foreground">Chef de Projet - Industrie & Énergie</p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-            <motion.div
-              className="text-center mt-12"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
-                <Star className="h-4 w-4 fill-primary text-primary" />
-                <span className="font-semibold">4.9/5</span>
-                <span>•</span>
-                <span>Plus de 500 chantiers réalisés</span>
-                <span>•</span>
-                <span>98% de clients satisfaits</span>
-              </div>
-            </motion.div>
           </div>
         </section>
 
