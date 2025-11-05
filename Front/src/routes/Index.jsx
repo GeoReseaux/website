@@ -472,23 +472,6 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                  >
-                    <div className="rounded-full bg-primary/10 p-2">
-                      <FileCheck className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Certification Bureau Veritas</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Certificat 6425522/A-1 pour les prestations de géoréférencement et détection des réseaux.
-                      </p>
-                    </div>
-                  </motion.div>
-                  <motion.div
-                    className="flex items-start gap-3 rounded-lg border bg-background p-4"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
                   >
                     <div className="rounded-full bg-primary/10 p-2">
@@ -561,9 +544,9 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground mb-4">
                     Service gratuit permettant d'identifier les exploitants concernés par vos déclarations DT-DICT.
                   </p>
-                  <Button variant="outline" size="sm">
+                  <a href="https://www.reseaux-et-canalisations.ineris.fr/gu-presentation/construire-sans-detruire/teleservice-reseaux-et-canalisations.html" target="_blank" rel="noopener noreferrer" className="inline-block rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
                     Accéder au téléservice
-                  </Button>
+                  </a>
                 </div>
               </motion.div>
             </div>
