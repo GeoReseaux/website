@@ -515,27 +515,31 @@ export default function Home() {
                   <div className="grid gap-3 text-sm">
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Canalisations de transport d'hydrocarbures et gaz combustibles</span>
+                      <span>Gaz combustibles hydrocarbure</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Lignes électriques et réseaux d'éclairage public</span>
+                      <span>Produits chimiques</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Installations de communications électroniques</span>
+                      <span>Électricté BT, HTA, HTB, 1 feux tricolores, éclairage public</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Canalisations d'eau et d'assainissement</span>
+                      <span>Installations ferroviaires ou guidées</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Réseaux de chauffage urbain et vapeur d'eau</span>
+                      <span>Chauffage et climatisation</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-primary"></div>
-                      <span>Installations ferroviaires et de transport guidé</span>
+                      <span>Transport de déchets par dispositif</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-2 w-2 rounded-full bg-primary"></div>
+                      <span>Digues de submersion & d'innondations</span>
                     </div>
                   </div>
                 </div>
