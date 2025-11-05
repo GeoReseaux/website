@@ -67,7 +67,7 @@ export default function NetworkAnimation() {
 
     const nodes = []
     const numNodes = 20
-    const colors = ["#0066FF", "#FF3366", "#33FF66"]
+    const colors = ["#225777", "#FF3366", "#33FF66"]
 
     for (let i = 0; i < numNodes; i++) {
       const x = Math.random() * canvas.width
