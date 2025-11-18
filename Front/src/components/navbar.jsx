@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Menu, Network } from "lucide-react"
+import { Menu } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <Network className="h-6 w-6 text-primary" />
+          <img src="/logo.png" alt="Géo-Réseaux" className="h-16 w-16" />
           <span className="text-lg font-bold">Géo-Réseaux</span>
         </Link>
         <nav className="ml-auto hidden gap-6 md:flex">
