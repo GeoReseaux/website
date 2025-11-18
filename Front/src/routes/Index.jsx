@@ -7,6 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import NetworkAnimation from "@/components/network-animation"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import HeroCarousel from "@/components/hero-carousel"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -18,6 +19,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
+      
+      <HeroCarousel />
 
       <main className="flex-1">
         <section className="relative overflow-hidden bg-gradient-to-b from-primary/10 to-background py-20 md:py-32">
