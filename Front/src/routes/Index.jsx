@@ -22,7 +22,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroCarousel />
 
-        <section className="bg-background py-20">
+        <section id="pricing" className="scroll-mt-16 bg-background py-20">
           <div className="container px-4 md:px-6">
             <motion.div
               className="flex flex-col items-center justify-center space-y-4 text-center"
@@ -268,7 +268,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-muted/50 py-20">
+        <section id="testimonials" className="scroll-mt-16 bg-muted/50 py-20">
           <div className="container px-4 md:px-6">
             <motion.div
               className="text-center space-y-4 mb-16"
@@ -517,7 +517,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-primary text-primary-foreground py-20">
+        <section id="contact" className="scroll-mt-16 bg-primary text-primary-foreground py-20">
           <motion.div
             className="container px-4 md:px-6"
             initial={{ opacity: 0, y: 20 }}

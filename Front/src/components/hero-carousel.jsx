@@ -60,6 +60,7 @@ export default function HeroCarousel() {
 
   return (
     <div 
+      id="hero"
       className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
@@ -106,7 +107,7 @@ export default function HeroCarousel() {
                     <Button 
                       size="lg" 
                       variant="outline"
-                      className="border-white text-white hover:bg-white hover:text-black px-8"
+                      className="border-white text-black hover:bg-white hover:text-black px-8"
                     >
                       {slide.ctaSecondaryText}
                     </Button>

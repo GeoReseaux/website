@@ -26,25 +26,17 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container flex h-16 items-center px-4 md:px-6">
-        <Link to="/" className="flex items-center gap-2">
+        <a href="#hero" className="flex items-center gap-2">
           <img src="/logo.png" alt="Géo-Réseaux" className="h-16 w-16" />
           <span className="text-lg font-bold">Géo-Réseaux</span>
-        </Link>
+        </a>
         <nav className="ml-auto hidden gap-6 md:flex">
-          <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
-            Accueil
-          </Link>
-          <Link to="#pricing" className="text-sm font-medium transition-colors hover:text-primary">
-            Prestations
-          </Link>
-          <Link to="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
-            Témoignages
-          </Link>
+          <a href="#hero" className="text-sm font-medium transition-colors hover:text-primary">Accueil</a>
+          <a href="#pricing" className="text-sm font-medium transition-colors hover:text-primary">Prestations</a>
+          <a href="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">Témoignages</a>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
-          <Link to="#contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>
-            Contact
-          </Link>
+          <a href="#contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>Contact</a>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -54,18 +46,10 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-6 mt-8">
-                <Link to="/" className="text-lg font-medium transition-colors hover:text-primary">
-                  Accueil
-                </Link>
-                <Link to="#pricing" className="text-lg font-medium transition-colors hover:text-primary">
-                  Prestations
-                </Link>
-                <Link to="#testimonials" className="text-lg font-medium transition-colors hover:text-primary">
-                  Témoignages
-                </Link>
-                <Link to="#contact" className="text-lg font-medium transition-colors hover:text-primary">
-                  Contact
-                </Link>
+                <a href="#hero" className="text-lg font-medium transition-colors hover:text-primary">Accueil</a>
+                <a href="#pricing" className="text-lg font-medium transition-colors hover:text-primary">Prestations</a>
+                <a href="#testimonials" className="text-lg font-medium transition-colors hover:text-primary">Témoignages</a>
+                <a href="#contact" className="text-lg font-medium transition-colors hover:text-primary">Contact</a>
               </div>
             </SheetContent>
           </Sheet>
