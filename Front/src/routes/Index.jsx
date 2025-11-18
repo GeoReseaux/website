@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight, Globe, Map, Network, Shield, Zap, Search, MapPin, FileCheck, Users, Star, Building, Wrench } from "lucide-react"
+import { motion } from "framer-motion"
+import { ArrowRight, Network, Shield, Zap, Search, MapPin, FileCheck, Users, Star, Building, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import NetworkAnimation from "@/components/network-animation"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import HeroCarousel from "@/components/hero-carousel"
@@ -19,67 +18,9 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      
-      <HeroCarousel />
 
       <main className="flex-1">
-        <section className="relative overflow-hidden bg-gradient-to-b from-primary/10 to-background py-20 md:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-              <motion.div
-                className="flex flex-col justify-center space-y-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="space-y-2">
-                  <motion.h1
-                    className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.7 }}
-                  >
-                    Détection de Réseaux <span className="text-primary">Enterrés</span>
-                  </motion.h1>
-                  <motion.p
-                    className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4, duration: 0.7 }}
-                  >
-                    Spécialistes certifiés en détection et géoréférencement des réseaux souterrains. Sécurisez vos travaux avec nos technologies de pointe non-destructives.
-                  </motion.p>
-                </div>
-                <motion.div
-                  className="flex flex-col gap-2 min-[400px]:flex-row"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.6, duration: 0.7 }}
-                >
-                  <Button size="lg" className="group">
-                    Demander un devis
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    Nos prestations
-                  </Button>
-                </motion.div>
-              </motion.div>
-              <AnimatePresence>
-                {isLoaded && (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.3, duration: 0.7 }}
-                    className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden"
-                  >
-                    <NetworkAnimation />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-        </section>
+        <HeroCarousel />
 
         <section className="bg-background py-20">
           <div className="container px-4 md:px-6">
