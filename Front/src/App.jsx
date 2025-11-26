@@ -5,7 +5,7 @@ export default function App() {
   const routes = useRouter();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/website">
       <Routes>
         {routes.map(({ path, component: Component }) => (
           <Route key={path} path={path} element={<Component />} />
