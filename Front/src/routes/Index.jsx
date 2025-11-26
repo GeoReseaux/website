@@ -10,6 +10,7 @@ import HeroCarousel from "@/components/hero-carousel"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const BASE = import.meta.env.BASE_URL
 
   useEffect(() => {
     setIsLoaded(true)
@@ -74,7 +75,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src="/DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg"
+                            src={`${BASE}DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg`}
                             alt="Méthode électromagnétique"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -82,7 +83,7 @@ export default function Home() {
                         </CarouselItem>
                         <CarouselItem>
                           <img
-                            src="/DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg"
+                            src={`${BASE}DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg`}
                             alt="Radar géologique (GPR)"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -125,7 +126,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src="/TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg"
+                            src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg`}
                             alt="Topographie et cartographie"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -169,7 +170,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem className="flex justify-center items-center">
                         <img
-                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg"
+                          src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg`}
                           alt="Topographie et cartographie"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -177,7 +178,7 @@ export default function Home() {
                       </CarouselItem>
                       <CarouselItem className="flex justify-center items-center">
                         <img
-                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg"
+                          src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg`}
                           alt="Topographie et cartographie"
                           className="w-auto h-auto max-w-[85%] max-h-[65vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -263,24 +264,24 @@ export default function Home() {
                   <Carousel className="w-full">
                     <CarouselContent>
                       <CarouselItem>
-                        <img
-                          src="/SECURISATION_DES_RESEAUX.jpg"
+                          <img
+                          src={`${BASE}SECURISATION_DES_RESEAUX.jpg`}
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
                         />      
                       </CarouselItem>
                       <CarouselItem>
-                        <img
-                          src="/SECURISATION_DES_RESEAUX2.jpg"
+                          <img
+                          src={`${BASE}SECURISATION_DES_RESEAUX2.jpg`}
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
                         />      
                       </CarouselItem>
                       <CarouselItem>
-                        <img
-                          src="/SECURISATION_DES_RESEAUX3.jpg"
+                          <img
+                          src={`${BASE}SECURISATION_DES_RESEAUX3.jpg`}
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"

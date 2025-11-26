@@ -9,6 +9,7 @@ import { buttonVariants } from "@/components/ui/button"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const BASE = import.meta.env.BASE_URL
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
@@ -27,7 +28,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center px-4 md:px-6">
         <a href="#hero" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Géo-Réseaux" className="h-16 w-16" />
+          <img src={`${BASE}logo.png`} alt="Géo-Réseaux" className="h-16 w-16" />
           <span className="text-lg font-bold">Géo-Réseaux</span>
         </a>
         <nav className="ml-auto hidden gap-6 md:flex">
