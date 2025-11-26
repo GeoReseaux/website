@@ -436,7 +436,7 @@ export default function Home() {
                     Respect des normes DT-DICT
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed">
-                    Depuis le 1er juillet 2012, le décret DT-DICT encadre les travaux à proximité des réseaux enterrés. Nos équipes certifiées garantissent la conformité de vos projets.
+                    Depuis le 1er juillet 2012, le décret DT-DICT encadre les travaux à proximité des réseaux enterrés. Nos équipes garantissent la conformité de vos projets.
                   </p>
                 </div>
                 <div className="grid gap-4">

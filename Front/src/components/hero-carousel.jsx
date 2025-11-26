@@ -7,7 +7,7 @@ const slides = [
     id: 1,
     title: "Détection de Réseaux",
     subtitle: "Enterrés",
-    description: "Spécialistes certifiés en détection et géoréférencement des réseaux souterrains. Sécurisez vos travaux avec nos technologies de pointe non destructives.",
+    description: "Spécialisé en détection et géoréférencement des réseaux souterrains. Sécurisez vos travaux avec nos technologies de pointe non destructives.",
     image: "",
     ctaText: "Demander un devis",
     ctaSecondaryText: "Nos prestations"
@@ -16,7 +16,7 @@ const slides = [
     id: 2,
     title: "Géoréférencement",
     subtitle: "Précision & Fiabilité",
-    description: "Cartographiez avec précision vos infrastructures souterraines grâce à nos technologies de géoréférencement avancées et notre expertise certifiée.",
+    description: "Cartographiez avec précision vos infrastructures souterraines grâce à nos technologies de géoréférencement avancées et notre expertise.",
     image: "",
     ctaText: "En savoir plus",
     ctaSecondaryText: "Nos services"
@@ -25,7 +25,7 @@ const slides = [
     id: 3,
     title: "Sécurité & Conformité",
     subtitle: "DT-DICT",
-    description: "Respectez la réglementation DT-DICT avec nos équipes certifiées. Sécurisez vos chantiers et évitez les incidents grâce à notre expertise.",
+    description: "Respectez la réglementation DT-DICT avec nos équipes. Sécurisez vos chantiers et évitez les incidents grâce à notre expertise.",
     image: "",
     ctaText: "Nous contacter",
     ctaSecondaryText: "Documentation"
