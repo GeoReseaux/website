@@ -73,13 +73,20 @@ export default function Home() {
                     <Carousel className="w-full">
                       <CarouselContent>
                         <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Méthode électromagnétique</div>
+                          <img
+                            src="/DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg"
+                            alt="Méthode électromagnétique"
+                            className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                            loading="lazy"
+                          />
                         </CarouselItem>
                         <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Radar géologique (GPR)</div>
-                        </CarouselItem>
-                        <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Résultats cartographiés</div>
+                          <img
+                            src="/DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg"
+                            alt="Radar géologique (GPR)"
+                            className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                            loading="lazy"
+                          />
                         </CarouselItem>
                       </CarouselContent>
                       <CarouselPrevious />
@@ -117,13 +124,12 @@ export default function Home() {
                     <Carousel className="w-full">
                       <CarouselContent>
                         <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Relevé RTK</div>
-                        </CarouselItem>
-                        <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Plan topo</div>
-                        </CarouselItem>
-                        <CarouselItem>
-                          <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Export SIG</div>
+                          <img
+                            src="/TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg"
+                            alt="Topographie et cartographie"
+                            className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                            loading="lazy"
+                          />                        
                         </CarouselItem>
                       </CarouselContent>
                       <CarouselPrevious />
@@ -161,14 +167,21 @@ export default function Home() {
                   </DialogHeader>
                   <Carousel className="w-full">
                     <CarouselContent>
-                      <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">MNT / Courbes</div>
+                      <CarouselItem className="flex justify-center items-center">
+                        <img
+                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg"
+                          alt="Topographie et cartographie"
+                          className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />
                       </CarouselItem>
-                      <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Plan masse</div>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Orthophoto</div>
+                      <CarouselItem className="flex justify-center items-center">
+                        <img
+                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg"
+                          alt="Topographie et cartographie"
+                          className="w-auto h-auto max-w-[85%] max-h-[65vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />
                       </CarouselItem>
                     </CarouselContent>
                     <CarouselPrevious />
