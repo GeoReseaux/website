@@ -263,13 +263,28 @@ export default function Home() {
                   <Carousel className="w-full">
                     <CarouselContent>
                       <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Repérage & marquage</div>
+                        <img
+                          src="/SECURISATION_DES_RESEAUX.jpg"
+                          alt="Sécurisation des réseaux"
+                          className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />      
                       </CarouselItem>
                       <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Signalisation chantier</div>
+                        <img
+                          src="/SECURISATION_DES_RESEAUX2.jpg"
+                          alt="Sécurisation des réseaux"
+                          className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />      
                       </CarouselItem>
                       <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Contrôles et rapports</div>
+                        <img
+                          src="/SECURISATION_DES_RESEAUX3.jpg"
+                          alt="Sécurisation des réseaux"
+                          className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />      
                       </CarouselItem>
                     </CarouselContent>
                     <CarouselPrevious />
