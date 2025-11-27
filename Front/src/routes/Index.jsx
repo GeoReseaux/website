@@ -68,7 +68,7 @@ export default function Home() {
                     <DialogHeader>
                       <DialogTitle>DETECTION DE RESEAUX ENTERRÉS</DialogTitle>
                       <DialogDescription>
-                        Aperçu de nos interventions et méthodes de détection.
+                        Détection par méthode au géoradar à pénétration de sol.                      
                       </DialogDescription>
                     </DialogHeader>
                     <Carousel className="w-full">
@@ -132,6 +132,14 @@ export default function Home() {
                             loading="lazy"
                           />                        
                         </CarouselItem>
+                        <CarouselItem>
+                          <img
+                            src={`${BASE}GEOREFERENCEMENT_DES_RESEAUX_.jpg`}
+                            alt="Géoréférencement des réseaux enterrés"
+                            className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                            loading="lazy"
+                          />                        
+                        </CarouselItem>
                       </CarouselContent>
                       <CarouselPrevious />
                       <CarouselNext />
@@ -154,7 +162,7 @@ export default function Home() {
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">TOPOGRAPHIE ET CARTOGRAPHIE</h3>
                       <p className="text-muted-foreground">
-                        La topographie et la cartographie sont deux disciplines complémentaires au cœur des métiers du géoréférencement, de la détection de réseaux et de l’aménagement du territoire.
+                        La topographie et la cartographie sont deux disciplines complémentaires au cœur des métiers du géoréférencement, de la détection de réseaux et de l'aménagement du territoire.
                       </p>
                     </div>
                   </motion.div>
@@ -203,9 +211,9 @@ export default function Home() {
                       <Shield className="h-6 w-6 text-primary" />
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-xl font-bold">ETUDE DE PROJET ELECTRIQUE ET GAZ</h3>
+                      <h3 className="text-xl font-bold">ETUDE DE PROJET</h3>
                       <p className="text-muted-foreground">
-                        L’étude de projet est une phase stratégique dans les travaux d’aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s’inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
+                        L'étude de projet est une phase stratégique dans les travaux d'aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s'inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
                       </p>
                     </div>
                   </motion.div>
@@ -249,7 +257,7 @@ export default function Home() {
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">SECURISATION DES RESEAUX POUR DES TRAVAUX SÛRE</h3>
                       <p className="text-muted-foreground">
-                        La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu’acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
+                        La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu'acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
                       </p>
                     </div>
                   </motion.div>
@@ -310,7 +318,7 @@ export default function Home() {
                 Témoignages
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Ils nous font confiance
+                Ils nous ont fait confiance
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed max-w-3xl mx-auto">
                 Découvrez les retours d'expérience de nos clients qui ont fait appel à nos services de détection de réseaux enterrés.
