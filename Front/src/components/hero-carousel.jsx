@@ -10,7 +10,9 @@ const slides = [
     description: "Spécialisé en détection et géoréférencement des réseaux souterrains. Sécurisez vos travaux avec nos technologies de pointe non destructives.",
     image: "TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg",
     ctaText: "Demander un devis",
-    ctaSecondaryText: "Nos prestations"
+    ctaLink: "#contact",
+    ctaSecondaryText: "Nos prestations",
+    ctaSecondaryLink: "#pricing"
   },
   {
     id: 2,
@@ -18,8 +20,10 @@ const slides = [
     subtitle: "Précision & Fiabilité",
     description: "Cartographiez avec précision vos infrastructures souterraines et aériennes grâce à nos technologies de géoréférencement avancées et notre expertise.",
     image: "TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg",
-    ctaText: "En savoir plus",
-    ctaSecondaryText: "Nos prestations"
+    ctaText: "Nous contacter",
+    ctaLink: "#contact",
+    ctaSecondaryText: "Nos prestations",
+    ctaSecondaryLink: "#pricing"
   },
   {
     id: 3,
@@ -28,7 +32,9 @@ const slides = [
     description: "Respect de la réglementation DT-DICT par nos équipes. Sécurisez vos chantiers et évitez les incidents grâce à notre expertise.",
     image: "TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg",
     ctaText: "Nous contacter",
-    ctaSecondaryText: "Documentation"
+    ctaLink: "#contact",
+    ctaSecondaryText: "Documentation",
+    ctaSecondaryLink: "#certifications"
   }
 ]
 
@@ -98,18 +104,24 @@ export default function HeroCarousel() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button 
+                      asChild
                       size="lg" 
                       className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 group"
                     >
-                      {slide.ctaText}
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      <a href={slide.ctaLink}>
+                        {slide.ctaText}
+                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </a>
                     </Button>
                     <Button 
+                      asChild
                       size="lg" 
                       variant="outline"
                       className="border-white text-black hover:bg-white hover:text-black px-8"
                     >
-                      {slide.ctaSecondaryText}
+                      <a href={slide.ctaSecondaryLink}>
+                        {slide.ctaSecondaryText}
+                      </a>
                     </Button>
                   </div>
                 </div>
