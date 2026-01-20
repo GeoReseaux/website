@@ -492,17 +492,25 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Réseaux concernés par DT-DICT</h3>
                   <div className="grid md:grid-cols-2 gap-6 text-sm">
                     <div className="space-y-3">
+                      <h4 className="font-semibold text-destructive">Sensible</h4>
                       <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
+                        <div className="h-2 w-2 rounded-full bg-destructive"></div>
                         <span>Gaz combustibles hydrocarbure</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
-                        <span>Produits chimiques</span>
+                        <div className="h-2 w-2 rounded-full bg-destructive"></div>
+                        <span>Électricité BT, HTA, HTB, feux tricolores, éclairage public</span>
                       </div>
                       <div className="flex items-center gap-2">
+                        <div className="h-2 w-2 rounded-full bg-destructive"></div>
+                        <span>Digues de submersion & d'inondations</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-primary">Non sensible</h4>
+                      <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-primary"></div>
-                        <span>Électricté BT, HTA, HTB, 1 feux tricolores, éclairage public</span>
+                        <span>Produits chimiques</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-primary"></div>
@@ -516,12 +524,6 @@ export default function Home() {
                         <div className="h-2 w-2 rounded-full bg-primary"></div>
                         <span>Transport de déchets par dispositif</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-primary"></div>
-                        <span>Digues de submersion & d'innondations</span>
-                      </div>
-                    </div>
-                    <div className="space-y-3">
                       <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-primary"></div>
                         <span>Assainissement et pluvial</span>
