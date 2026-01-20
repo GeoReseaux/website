@@ -206,7 +206,7 @@ export default function Home() {
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">ETUDE DE PROJET</h3>
                       <p className="text-muted-foreground">
-                        L'étude de projet est une phase stratégique dans les travaux d'aménagement, de raccordement ou de réhabilitation de réseaux. GEO-RESEAUX, elle s'inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
+                        L'étude de projet est une phase stratégique dans les travaux d'aménagement, de raccordement ou de réhabilitation de réseaux. GÉO-RÉSEAUX, elle s'inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
                       </p>
                     </div>
                   </motion.div>

@@ -29,7 +29,7 @@ export default function About() {
                 À propos
               </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                GEO-RÉSEAUX
+                GÉO-RÉSEAUX
               </h1>
             </motion.div>
 
@@ -42,7 +42,7 @@ export default function About() {
               >
                 <img
                   src={`${BASE}image1.png`}
-                  alt="GEO-RÉSEAUX"
+                  alt="GÉO-RÉSEAUX"
                   className="rounded-lg shadow-lg w-full h-auto object-cover border-2 border-primary/20 block align-bottom"
                 />
               </motion.div>
@@ -54,13 +54,13 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <p className="text-muted-foreground md:text-lg leading-relaxed">
-                  <span className="font-semibold text-foreground">GEO-RÉSEAUX</span> est une entreprise spécialisée dans la détection, la topographie et la cartographie, construite autour d'une idée simple : offrir un travail précis, fiable et profondément ancré dans la réalité du terrain.
+                  <span className="font-semibold text-foreground">GÉO-RÉSEAUX</span> est une entreprise spécialisée dans la détection, la topographie et la cartographie, construite autour d'une idée simple : offrir un travail précis, fiable et profondément ancré dans la réalité du terrain.
                 </p>
                 <p className="text-muted-foreground md:text-lg leading-relaxed">
                   Chaque intervention est menée avec rigueur, respect des normes et souci du détail, afin de garantir des résultats justes et exploitables.
                 </p>
                 <p className="text-muted-foreground md:text-lg leading-relaxed">
-                  Fondée et dirigée par <span className="font-semibold text-foreground">Akki Abderazak</span>, GEO-RÉSEAUX s'appuie sur une expertise solide et une connaissance fine des métiers. Cette approche pragmatique permet d'apporter des solutions adaptées, cohérentes et directement opérationnelles, que ce soit pour des projets d'aménagement, d'infrastructures ou d'études techniques.
+                  Fondée et dirigée par <span className="font-semibold text-foreground">Akki Abderazak</span>, GÉO-RÉSEAUX s'appuie sur une expertise solide et une connaissance fine des métiers. Cette approche pragmatique permet d'apporter des solutions adaptées, cohérentes et directement opérationnelles, que ce soit pour des projets d'aménagement, d'infrastructures ou d'études techniques.
                 </p>
               </motion.div>
             </div>
@@ -95,7 +95,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.7 }}
             >
               <p className="text-muted-foreground md:text-lg leading-relaxed">
-                Chez GEO-RÉSEAUX, nous croyons que la qualité se construit sur le terrain, au contact du réel. C'est pourquoi nous privilégions une approche humaine, attentive et réactive, où chaque mission est traitée avec sérieux et professionnalisme.
+                Chez GÉO-RÉSEAUX, nous croyons que la qualité se construit sur le terrain, au contact du réel. C'est pourquoi nous privilégions une approche humaine, attentive et réactive, où chaque mission est traitée avec sérieux et professionnalisme.
               </p>
               <div className="rounded-lg bg-primary/5 border border-primary/20 p-6">
                 <p className="text-lg font-medium text-primary">
