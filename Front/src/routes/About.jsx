@@ -33,22 +33,22 @@ export default function About() {
               </h1>
             </motion.div>
 
-            <div className="grid gap-12 lg:grid-cols-5 lg:gap-16 items-center">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
               <motion.div
-                className="lg:col-span-2"
+                className="lg:w-[250px] flex-shrink-0"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <img
-                  src={`${BASE}image1.jpg`}
+                  src={`${BASE}image1.png`}
                   alt="GEO-RÉSEAUX"
-                  className="rounded-lg shadow-lg w-full h-[400px] object-cover border-2 border-primary/20"
+                  className="rounded-lg shadow-lg w-full object-cover border-2 border-primary/20"
                 />
               </motion.div>
 
               <motion.div
-                className="space-y-6 lg:col-span-3"
+                className="space-y-6 flex-1"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
