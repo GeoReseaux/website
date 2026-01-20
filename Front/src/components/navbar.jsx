@@ -35,6 +35,7 @@ export default function Navbar() {
           <a href="#hero" className="text-sm font-medium transition-colors hover:text-primary">Accueil</a>
           <a href="#pricing" className="text-sm font-medium transition-colors hover:text-primary">Prestations</a>
           <a href="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">Témoignages</a>
+          <a href="#certifications" className="text-sm font-medium transition-colors hover:text-primary">Certifications</a>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
           <a href="#contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>Contact</a>
@@ -50,6 +51,7 @@ export default function Navbar() {
                 <a href="#hero" className="text-lg font-medium transition-colors hover:text-primary">Accueil</a>
                 <a href="#pricing" className="text-lg font-medium transition-colors hover:text-primary">Prestations</a>
                 <a href="#testimonials" className="text-lg font-medium transition-colors hover:text-primary">Témoignages</a>
+                <a href="#certifications" className="text-lg font-medium transition-colors hover:text-primary">Certifications</a>
                 <a href="#contact" className="text-lg font-medium transition-colors hover:text-primary">Contact</a>
               </div>
             </SheetContent>

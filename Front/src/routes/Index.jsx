@@ -68,7 +68,7 @@ export default function Home() {
                     <DialogHeader>
                       <DialogTitle>DETECTION DE RESEAUX ENTERRÉS</DialogTitle>
                       <DialogDescription>
-                        Détection par méthode au géoradar à pénétration de sol.                      
+                        Détection par méthode électromagnétique et au géoradar (pénétration de sol).                      
                       </DialogDescription>
                     </DialogHeader>
                     <Carousel className="w-full">
@@ -119,7 +119,7 @@ export default function Home() {
                     <DialogHeader>
                       <DialogTitle>Géoréférencement des réseaux</DialogTitle>
                       <DialogDescription>
-                        Exemples de levés et restitutions cartographiques.
+                        Relevés au GPS et au théodolithe.
                       </DialogDescription>
                     </DialogHeader>
                     <Carousel className="w-full">
@@ -169,9 +169,9 @@ export default function Home() {
                 </DialogTrigger>
                 <DialogContent className="max-w-2xl">
                   <DialogHeader>
-                    <DialogTitle>Topographie & Cartographie</DialogTitle>
+                    <DialogTitle>Cartographie</DialogTitle>
                     <DialogDescription>
-                      Échantillon de livrables et relevés.
+                      Livrables de relevés terrain.
                     </DialogDescription>
                   </DialogHeader>
                   <Carousel className="w-full">
@@ -181,14 +181,6 @@ export default function Home() {
                           src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg`}
                           alt="Topographie et cartographie"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
-                          loading="lazy"
-                        />
-                      </CarouselItem>
-                      <CarouselItem className="flex justify-center items-center">
-                        <img
-                          src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg`}
-                          alt="Topographie et cartographie"
-                          className="w-auto h-auto max-w-[85%] max-h-[65vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
                         />
                       </CarouselItem>
@@ -213,7 +205,7 @@ export default function Home() {
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">ETUDE DE PROJET</h3>
                       <p className="text-muted-foreground">
-                        L'étude de projet est une phase stratégique dans les travaux d'aménagement, de raccordement ou de réhabilitation de réseaux. Chez GEO-RESEAUX, elle s'inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
+                        L'étude de projet est une phase stratégique dans les travaux d'aménagement, de raccordement ou de réhabilitation de réseaux. GEO-RESEAUX, elle s'inscrit dans une démarche rigoureuse mêlant topographie, détection, géoréférencement et cartographie.
                       </p>
                     </div>
                   </motion.div>
@@ -222,13 +214,18 @@ export default function Home() {
                   <DialogHeader>
                     <DialogTitle>Étude de projet</DialogTitle>
                     <DialogDescription>
-                      Étapes clés et exemples de dossiers.
+                      Plan projet.
                     </DialogDescription>
                   </DialogHeader>
                   <Carousel className="w-full">
                     <CarouselContent>
                       <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Analyse préalable</div>
+                        <img
+                          src={`${BASE}ETUDE_DE_PROJET1.jpg`}
+                          alt="Étude de projet"
+                          className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
+                          loading="lazy"
+                        />                      
                       </CarouselItem>
                       <CarouselItem>
                         <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Conception / Plans</div>
@@ -257,7 +254,7 @@ export default function Home() {
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold">SECURISATION DES RESEAUX POUR DES TRAVAUX SÛRE</h3>
                       <p className="text-muted-foreground">
-                        La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes. GEO-RESEAUX, en tant qu'acteur spécialisé, peut structurer cette mission autour de plusieurs axes :
+                        La sécurisation des réseaux enterrés est une étape incontournable pour garantir des travaux sûrs, conformes à la réglementation et sans risque pour les intervenants ni les infrastructures existantes.
                       </p>
                     </div>
                   </motion.div>
@@ -266,7 +263,7 @@ export default function Home() {
                   <DialogHeader>
                     <DialogTitle>Sécurisation des réseaux</DialogTitle>
                     <DialogDescription>
-                      Procédures et bonnes pratiques.
+                      Marquage-piquetage.
                     </DialogDescription>
                   </DialogHeader>
                   <Carousel className="w-full">
@@ -426,7 +423,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20">
+        <section id="certifications" className="py-20">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <motion.div
