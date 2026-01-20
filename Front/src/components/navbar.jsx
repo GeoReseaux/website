@@ -27,7 +27,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container flex h-16 items-center px-4 md:px-6">
-        <a href="#hero" className="flex items-center gap-2">
+        <a href="/#hero" className="flex items-center gap-2">
           <img src={`${BASE}logo.png`} alt="Géo-Réseaux" className="h-16 w-16" />
           <span className="text-lg font-bold">Géo-Réseaux</span>
         </a>
