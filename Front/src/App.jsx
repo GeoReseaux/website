@@ -5,6 +5,7 @@ export default function App() {
   const routes = useRouter();
 
   return (
+    // todo (prod) : remove this fix for route "/" 
     <BrowserRouter basename="/website">
       <Routes>
         {routes.map(({ path, component: Component }) => (
