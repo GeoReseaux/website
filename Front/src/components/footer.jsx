@@ -8,7 +8,6 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <Network className="h-6 w-6 text-primary" />
               <span className="text-lg font-bold">Géo-Réseaux</span>
             </Link>
             <p className="text-sm text-muted-foreground">
@@ -45,22 +44,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Analyse de performance
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
                   Sécurité réseau
                 </Link>
               </li>
               <li>
                 <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
                   Optimisation d'infrastructure
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Surveillance en temps réel
                 </Link>
               </li>
             </ul>
