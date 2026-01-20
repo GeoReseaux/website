@@ -47,19 +47,19 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
+                <span className="text-sm text-muted-foreground hover:text-primary">
                   Cartographie réseau
-                </Link>
+                </span>
               </li>
               <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
+                <span className="text-sm text-muted-foreground hover:text-primary">
                   Sécurité réseau
-                </Link>
+                </span>
               </li>
               <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-primary">
+                <span className="text-sm text-muted-foreground hover:text-primary">
                   Optimisation d'infrastructure
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
