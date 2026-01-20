@@ -33,9 +33,9 @@ export default function About() {
               </h1>
             </motion.div>
 
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start">
               <motion.div
-                className="lg:w-[250px] flex-shrink-0"
+                className="w-48 sm:w-56 md:w-64 lg:w-[250px] flex-shrink-0 leading-[0]"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -43,12 +43,12 @@ export default function About() {
                 <img
                   src={`${BASE}image1.png`}
                   alt="GEO-RÉSEAUX"
-                  className="rounded-lg shadow-lg w-full object-cover border-2 border-primary/20"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover border-2 border-primary/20 block align-bottom"
                 />
               </motion.div>
 
               <motion.div
-                className="space-y-6 flex-1"
+                className="space-y-6 flex-1 text-center lg:text-left"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
