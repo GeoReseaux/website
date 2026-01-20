@@ -576,7 +576,7 @@ export default function Home() {
                   variant="outline"
                   className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  <a href={`${BASE}#contact`}>Nous contacter</a>
+                  <a href="mailto:contact@geo-reseaux.net">Nous contacter</a>
                 </Button>
               </div>
             </div>
