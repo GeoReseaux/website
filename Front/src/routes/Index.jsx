@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight, Network, Shield, Zap, Search, MapPin, FileCheck, Users, Star, Building, Wrench } from "lucide-react"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
@@ -563,16 +564,19 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" variant="secondary" className="group">
-                  Obtenir un devis gratuit
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <Button asChild size="lg" variant="secondary" className="group">
+                  <Link to="/devis">
+                    Obtenir un devis gratuit
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </Button>
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  Nous contacter
+                  <a href={`${BASE}#contact`}>Nous contacter</a>
                 </Button>
               </div>
             </div>
