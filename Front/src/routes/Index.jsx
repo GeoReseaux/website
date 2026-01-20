@@ -227,12 +227,6 @@ export default function Home() {
                           loading="lazy"
                         />                      
                       </CarouselItem>
-                      <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Conception / Plans</div>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <div className="h-64 rounded-lg bg-muted flex items-center justify-center text-sm">Validation & conformité</div>
-                      </CarouselItem>
                     </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />
@@ -340,11 +334,11 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      "Intervention rapide et précise pour notre chantier de rénovation urbaine. L'équipe a su identifier tous les réseaux avec une grande précision, évitant ainsi tout risque d'incident."
+                      "Intervention rapide. L'équipe a su identifier tous les réseaux avec  précision, les intervenants ont travailler sur notre propriété et ont été respectueux des lieux."
                     </p>
                     <div className="pt-2">
                       <p className="font-semibold text-sm">Marie Dubois</p>
-                      <p className="text-xs text-muted-foreground">Responsable Travaux - Mairie de Lyon</p>
+                      <p className="text-xs text-muted-foreground">Toulouse.</p>
                     </div>
                   </div>
                 </div>
@@ -367,11 +361,11 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      "Service professionnel et conforme aux normes DT-DICT. Les rapports détaillés nous ont permis de planifier nos travaux en toute sécurité. Je recommande vivement."
+                      "Le responsable et l'équipe intervenante on su être a l'écoute de notre demande et réaliser les travaux  de repérage de réseaux et nous ont fournis les plans dans un délai appréciable."
                     </p>
                     <div className="pt-2">
                       <p className="font-semibold text-sm">Pierre Martin</p>
-                      <p className="text-xs text-muted-foreground">Directeur Technique - BTP Constructions</p>
+                      <p className="text-xs text-muted-foreground">Retraité.</p>
                     </div>
                   </div>
                 </div>
@@ -394,7 +388,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      "Excellente prestation pour la détection des réseaux électriques sur notre site industriel. Équipe réactive et matériel de pointe. Délais respectés."
+                      "Excellente prestation pour la détection des réseaux  sur notre site industriel. Équipe réactive et matériel de pointe. Délais respectés."
                     </p>
                     <div className="pt-2">
                       <p className="font-semibold text-sm">Sophie Leroy</p>
@@ -415,9 +409,7 @@ export default function Home() {
                 <Star className="h-4 w-4 fill-primary text-primary" />
                 <span className="font-semibold">4.9/5</span>
                 <span>•</span>
-                <span>Plus de 500 chantiers réalisés</span>
-                <span>•</span>
-                <span>98% de clients satisfaits</span>
+                <span>98% de nos clients satisfaits de nos interventions.</span>
               </div>
             </motion.div>
           </div>
