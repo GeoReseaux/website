@@ -27,19 +27,19 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container flex h-16 items-center px-4 md:px-6">
-        <a href="/#hero" className="flex items-center gap-2">
+        <a href={`${BASE}#hero`} className="flex items-center gap-2">
           <img src={`${BASE}logo.png`} alt="Géo-Réseaux" className="h-16 w-16" />
           <span className="text-lg font-bold">Géo-Réseaux</span>
         </a>
         <nav className="ml-auto hidden gap-6 md:flex">
-          <a href="/#hero" className="text-sm font-medium transition-colors hover:text-primary">Accueil</a>
-          <a href="/#pricing" className="text-sm font-medium transition-colors hover:text-primary">Prestations</a>
-          <a href="/#testimonials" className="text-sm font-medium transition-colors hover:text-primary">Témoignages</a>
-          <a href="/#certifications" className="text-sm font-medium transition-colors hover:text-primary">Certifications</a>
+          <a href={`${BASE}#hero`} className="text-sm font-medium transition-colors hover:text-primary">Accueil</a>
+          <a href={`${BASE}#pricing`} className="text-sm font-medium transition-colors hover:text-primary">Prestations</a>
+          <a href={`${BASE}#testimonials`} className="text-sm font-medium transition-colors hover:text-primary">Témoignages</a>
+          <a href={`${BASE}#certifications`} className="text-sm font-medium transition-colors hover:text-primary">Certifications</a>
           <Link to="/about" className="text-sm font-medium transition-colors hover:text-primary">À propos</Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-2">
-          <a href="/#contact" className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>Contact</a>
+          <a href={`${BASE}#contact`} className={cn(buttonVariants({ variant: "default", size: "default" }), "hidden md:flex")}>Contact</a>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -49,12 +49,12 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-6 mt-8">
-                <a href="/#hero" className="text-lg font-medium transition-colors hover:text-primary">Accueil</a>
-                <a href="/#pricing" className="text-lg font-medium transition-colors hover:text-primary">Prestations</a>
-                <a href="/#testimonials" className="text-lg font-medium transition-colors hover:text-primary">Témoignages</a>
-                <a href="/#certifications" className="text-lg font-medium transition-colors hover:text-primary">Certifications</a>
+                <a href={`${BASE}#hero`} className="text-lg font-medium transition-colors hover:text-primary">Accueil</a>
+                <a href={`${BASE}#pricing`} className="text-lg font-medium transition-colors hover:text-primary">Prestations</a>
+                <a href={`${BASE}#testimonials`} className="text-lg font-medium transition-colors hover:text-primary">Témoignages</a>
+                <a href={`${BASE}#certifications`} className="text-lg font-medium transition-colors hover:text-primary">Certifications</a>
                 <Link to="/about" className="text-lg font-medium transition-colors hover:text-primary">À propos</Link>
-                <a href="/#contact" className="text-lg font-medium transition-colors hover:text-primary">Contact</a>
+                <a href={`${BASE}#contact`} className="text-lg font-medium transition-colors hover:text-primary">Contact</a>
               </div>
             </SheetContent>
           </Sheet>
