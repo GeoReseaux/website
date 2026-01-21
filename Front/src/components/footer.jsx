@@ -103,7 +103,7 @@ export default function Footer() {
               <Link to="/policy" className="text-xs text-muted-foreground hover:text-primary">
                 Politique de confidentialité
               </Link>
-              <Link to="#" className="text-xs text-muted-foreground hover:text-primary">
+              <Link to="/legal" className="text-xs text-muted-foreground hover:text-primary">
                 Mentions légales
               </Link>
             </div>
