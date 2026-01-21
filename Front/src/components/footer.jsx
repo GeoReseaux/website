@@ -100,10 +100,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Géo-Réseaux. Tous droits réservés.
             </p>
             <div className="flex gap-4">
-              <Link to="#" className="text-xs text-muted-foreground hover:text-primary">
-                Conditions d'utilisation
-              </Link>
-              <Link to="#" className="text-xs text-muted-foreground hover:text-primary">
+              <Link to="/policy" className="text-xs text-muted-foreground hover:text-primary">
                 Politique de confidentialité
               </Link>
               <Link to="#" className="text-xs text-muted-foreground hover:text-primary">
