@@ -19,7 +19,7 @@ const slides = [
     title: "Géoréférencement",
     subtitle: "Précision & Fiabilité",
     description: "Cartographiez avec précision vos infrastructures souterraines et aériennes grâce à nos technologies de géoréférencement avancées et notre expertise.",
-    image: "TOPOGRAPHIE_ET_CARTOGRAPHIE3.jpg",
+    image: "TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpg",
     ctaText: "Nous contacter",
     ctaLink: "#contact",
     ctaSecondaryText: "Nos prestations",

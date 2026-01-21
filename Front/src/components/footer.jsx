@@ -2,14 +2,13 @@ import { Mail, MapPin, Network, Phone } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export default function Footer() {
-  const BASE = import.meta.env.BASE_URL
 
   return (
     <footer className="bg-muted py-12 border-t">
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <a href={BASE} className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <span className="text-lg font-bold">Géo-Réseaux</span>
             </a>
             <p className="text-sm text-muted-foreground">

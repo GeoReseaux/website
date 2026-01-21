@@ -4,7 +4,6 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
 export default function About() {
-  const BASE = import.meta.env.BASE_URL
 
   const pillars = [
     "la précision technique, indispensable à la fiabilité des projets,",
@@ -41,7 +40,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <img
-                  src={`${BASE}image1.png`}
+                  src="/image1.png"
                   alt="GÉO-RÉSEAUX"
                   className="rounded-lg shadow-lg w-full h-auto object-cover border-2 border-primary/20 block align-bottom"
                 />

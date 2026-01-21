@@ -41,7 +41,6 @@ export default function Devis() {
 
   const handleCheckboxChange = (name, checked) => {
     setFormData(prev => ({ ...prev, [name]: checked }))
-    // Si on décoche "hasPlans", on supprime les fichiers
     if (name === "hasPlans" && !checked) {
       setFiles([])
     }
@@ -90,7 +89,7 @@ export default function Devis() {
               Merci pour votre demande de devis. Notre équipe vous contactera dans les plus brefs délais.
             </p>
             <Button asChild className="mt-4">
-              <a href={import.meta.env.BASE_URL}>Retour à l'accueil</a>
+              <a href="/">Retour à l'accueil</a>
             </Button>
           </motion.div>
         </main>
@@ -130,7 +129,6 @@ export default function Devis() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {/* Coordonnées */}
               <div className="rounded-lg border bg-card p-6 space-y-4">
                 <h2 className="text-lg font-semibold">Vos coordonnées</h2>
                 <div className="grid gap-4 sm:grid-cols-2">
@@ -185,7 +183,6 @@ export default function Devis() {
                 </div>
               </div>
 
-              {/* Lieu d'intervention */}
               <div className="rounded-lg border bg-card p-6 space-y-4">
                 <h2 className="text-lg font-semibold">Lieu d'intervention</h2>
                 <div className="space-y-2">
@@ -247,11 +244,9 @@ export default function Devis() {
                 </div>
               </div>
 
-              {/* Documents et déclarations */}
               <div className="rounded-lg border bg-card p-6 space-y-6">
                 <h2 className="text-lg font-semibold">Documents et déclarations</h2>
 
-                {/* Plans de réseaux */}
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Checkbox
@@ -264,7 +259,6 @@ export default function Devis() {
                     </Label>
                   </div>
 
-                  {/* Zone d'upload conditionnelle */}
                   {formData.hasPlans && (
                     <motion.div
                       className="ml-7 space-y-3"
@@ -295,7 +289,6 @@ export default function Devis() {
                         </label>
                       </div>
 
-                      {/* Liste des fichiers */}
                       {files.length > 0 && (
                         <div className="space-y-2">
                           {files.map((file, index) => (
@@ -319,7 +312,6 @@ export default function Devis() {
                   )}
                 </div>
 
-                {/* Déclaration DT */}
                 <div className="flex items-center space-x-3">
                   <Checkbox
                     id="hasDeclarationDT"

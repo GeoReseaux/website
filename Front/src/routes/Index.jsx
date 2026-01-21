@@ -11,7 +11,6 @@ import HeroCarousel from "@/components/hero-carousel"
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const BASE = import.meta.env.BASE_URL
 
   useEffect(() => {
     setIsLoaded(true)
@@ -76,7 +75,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src={`${BASE}DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg`}
+                            src="/DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg"
                             alt="Méthode électromagnétique"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -84,7 +83,7 @@ export default function Home() {
                         </CarouselItem>
                         <CarouselItem>
                           <img
-                            src={`${BASE}DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg`}
+                            src="/DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg"
                             alt="Radar géologique (GPR)"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -127,7 +126,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg`}
+                            src="/TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg"
                             alt="Topographie et cartographie"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -135,7 +134,7 @@ export default function Home() {
                         </CarouselItem>
                         <CarouselItem>
                           <img
-                            src={`${BASE}GEOREFERENCEMENT_DES_RESEAUX_.jpg`}
+                            src="/GEOREFERENCEMENT_DES_RESEAUX_.jpg"
                             alt="Géoréférencement des réseaux enterrés"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -179,7 +178,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem className="flex justify-center items-center">
                         <img
-                          src={`${BASE}TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg`}
+                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg"
                           alt="Topographie et cartographie"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -222,7 +221,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem>
                         <img
-                          src={`${BASE}ETUDE_DE_PROJET1.jpg`}
+                          src="/ETUDE_DE_PROJET1.jpg"
                           alt="Étude de projet"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -265,7 +264,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem>
                           <img
-                          src={`${BASE}SECURISATION_DES_RESEAUX.jpg`}
+                          src="/SECURISATION_DES_RESEAUX.jpg"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -273,7 +272,7 @@ export default function Home() {
                       </CarouselItem>
                       <CarouselItem>
                           <img
-                          src={`${BASE}SECURISATION_DES_RESEAUX2.jpg`}
+                          src="/SECURISATION_DES_RESEAUX2.jpg"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -281,7 +280,7 @@ export default function Home() {
                       </CarouselItem>
                       <CarouselItem>
                           <img
-                          src={`${BASE}SECURISATION_DES_RESEAUX3.jpg`}
+                          src="/SECURISATION_DES_RESEAUX3.jpg"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
