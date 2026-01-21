@@ -75,7 +75,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src="/DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.jpg"
+                            src="/DETECTION_DE_RESEAU_PAR_METHODE_ELECTOMAGNETIQUE.webp"
                             alt="Méthode électromagnétique"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -83,7 +83,7 @@ export default function Home() {
                         </CarouselItem>
                         <CarouselItem>
                           <img
-                            src="/DETECTION_DE_RESEAUX_PAR_GEORADAR.jpg"
+                            src="/DETECTION_DE_RESEAUX_PAR_GEORADAR.webp"
                             alt="Radar géologique (GPR)"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -126,7 +126,7 @@ export default function Home() {
                       <CarouselContent>
                         <CarouselItem>
                           <img
-                            src="/TOPOGRAPHIE_ET_CARTOGRAPHIE1.jpg"
+                            src="/TOPOGRAPHIE_ET_CARTOGRAPHIE1.webp"
                             alt="Topographie et cartographie"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -134,7 +134,7 @@ export default function Home() {
                         </CarouselItem>
                         <CarouselItem>
                           <img
-                            src="/GEOREFERENCEMENT_DES_RESEAUX_.jpg"
+                            src="/GEOREFERENCEMENT_DES_RESEAUX_.webp"
                             alt="Géoréférencement des réseaux enterrés"
                             className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                             loading="lazy"
@@ -178,7 +178,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem className="flex justify-center items-center">
                         <img
-                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE2.jpeg"
+                          src="/TOPOGRAPHIE_ET_CARTOGRAPHIE2.webp"
                           alt="Topographie et cartographie"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -221,7 +221,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem>
                         <img
-                          src="/ETUDE_DE_PROJET1.jpg"
+                          src="/ETUDE_DE_PROJET1.webp"
                           alt="Étude de projet"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -264,7 +264,7 @@ export default function Home() {
                     <CarouselContent>
                       <CarouselItem>
                           <img
-                          src="/SECURISATION_DES_RESEAUX.jpg"
+                          src="/SECURISATION_DES_RESEAUX.webp"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -272,7 +272,7 @@ export default function Home() {
                       </CarouselItem>
                       <CarouselItem>
                           <img
-                          src="/SECURISATION_DES_RESEAUX2.jpg"
+                          src="/SECURISATION_DES_RESEAUX2.webp"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
@@ -280,7 +280,7 @@ export default function Home() {
                       </CarouselItem>
                       <CarouselItem>
                           <img
-                          src="/SECURISATION_DES_RESEAUX3.jpg"
+                          src="/SECURISATION_DES_RESEAUX3.webp"
                           alt="Sécurisation des réseaux"
                           className="w-auto h-auto max-w-[50%] max-h-[50vh] object-contain rounded-lg mx-auto border-2 border-[#225777]"
                           loading="lazy"
