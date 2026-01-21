@@ -64,10 +64,35 @@ export default function Devis() {
     setFiles(prev => prev.filter((_, i) => i !== index))
   }
 
-  const handleSubmit = (e) => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState("")
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log("Formulaire soumis:", formData, "Fichiers:", files)
-    setIsSubmitted(true)
+    setIsLoading(true)
+    setError("")
+
+    try {
+      const response = await fetch("https://api.geo-reseaux.net/devis", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setIsSubmitted(true)
+      } else {
+        setError(data.message || "Une erreur est survenue")
+      }
+    } catch (err) {
+      setError("Impossible d'envoyer la demande. Veuillez réessayer.")
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   if (isSubmitted) {
@@ -342,9 +367,24 @@ export default function Devis() {
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="w-full group">
-                Envoyer ma demande de devis
-                <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              {error && (
+                <div className="rounded-lg border border-destructive/50 bg-destructive/10 p-4 text-destructive text-sm">
+                  {error}
+                </div>
+              )}
+
+              <Button type="submit" size="lg" className="w-full group" disabled={isLoading}>
+                {isLoading ? (
+                  <>
+                    <span className="animate-spin mr-2">⏳</span>
+                    Envoi en cours...
+                  </>
+                ) : (
+                  <>
+                    Envoyer ma demande de devis
+                    <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </>
+                )}
               </Button>
 
               <p className="text-xs text-center text-muted-foreground">
